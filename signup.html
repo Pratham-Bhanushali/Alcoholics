@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <title>Sign Up Form</title>
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+        <style type="text/css">
+            * {
+            font-family: cursive;
+        }
+        .text-color {
+            color: rgb(255, 0, 0);
+            border: none;
+        }
+        .backimg{
+            background-image: url("pexels-bernyce-hollingworth-2702805.jpg");
+            opacity: 80%;
+            background-size: cover;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="container text-color">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 offset-md-3 offset-xl-4 offset-lg-4 border p-5 my-5 shadow p-3 mb-5 bg-body rounded backimg">
+                    <h3 class="m-3"><span><i class="fa fa-users text-color"></i></span> Create new Account</h3>
+                    <hr class="m-2">
+                    <form class="row g-3">
+                        <div class="col-md-12">
+                            <label for="Fname" class="form-label">First Name :</label>
+                            <div class="input-group">
+                                <div class="input-group-text"><i class="fa fa-user text-color"></i></div>
+                                <input type="text" class="form-control" id="Fname" placeholder="Enter your First Name">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="Lname" class="form-label">Last Name :</label>
+                            <div class="input-group">
+                                <div class="input-group-text"><i class="fa fa-user text-color"></i></div>
+                                <input type="text" class="form-control" id="Lname" placeholder="Enter your Last Name">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="Lname" class="form-label">Date Of Birth :</label>
+                            <div class="input-group">
+                                <div class="input-group-text"><i class="fa fa-calendar text-color"></i></div>
+                                <input type="date" class="form-control" id="date" placeholder="dd-mm-yyyy">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="inputEmail" class="form-label">Email :</label>
+                            <div class="input-group">
+                                <div class="input-group-text"><i class="fa fa-envelope text-color"></i></div>
+                                <input type="email" class="form-control" id="inputEmail4" placeholder="Enter your Email">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="inputEmail4" class="form-label">Contact No. :</label>
+                            <div class="input-group">
+                                <div class="input-group-text"><i class="fa fa-phone text-color"></i></div>
+                                <input type="number" class="form-control" id="inputEmail4" placeholder="Enter Contact No.">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="inputEmail4" class="form-label">Gender :</label>
+                            <div class="input-group">
+                                <div class="input-group-text">
+                                    <i class="fa fa-male text-color me-1"></i>|<i class="fa fa-female text-color ms-1"></i>
+                                </div>
+                                <div class="form-check m-2">
+                                    <input class="form-check-input" type="radio" name="gender" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Male
+                                    </label>
+                                </div>
+                                <div class="form-check m-2">
+                                    <input class="form-check-input" type="radio" name="gender" id="flexRadioDefault2">
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                        Female
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="input-group">
+                                <div class="input-group-text">
+                                    <button type="submit" class="btn">
+                                        <i class="fa fa-user-plus text-color me-2"></i>Sign in</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
