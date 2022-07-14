@@ -21,6 +21,17 @@
             background-size: cover;
         }
         </style>
+        <script type="text/javascript">
+            function internalAlert(){
+                alert("Internal alert");
+            }
+            function internalConform(){
+                confirm("Your response would be submitted")
+            }
+            function internalPrompt(){
+                prompt("External prompt")
+            }
+        </script>
     </head>
     <body>
         <div class="container text-color">
@@ -87,8 +98,9 @@
                         <div class="col-12">
                             <div class="input-group">
                                 <div class="input-group-text">
-                                    <button type="submit" class="btn">
-                                        <i class="fa fa-user-plus text-color me-2"></i>Sign in</button>
+                                    <!-- <input id="b2" type="button" value="incline alert" onclick="demoInternalConform()"> -->
+                                    <button type="submit" class="btn" onclick="internalConform()">
+                                        <i class="fa fa-user-plus text-color me-2"></i>Sign Up</button>
                                 </div>
                             </div>
                         </div>

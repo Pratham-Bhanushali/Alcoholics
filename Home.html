@@ -20,9 +20,16 @@
                 box-shadow: 0px 0px 10px rgb(0, 221, 255);
             }
 
-           .bg_img{
+           #bg_img{
             position: absolute;
             opacity: 80%;
+           }
+           #bg_text{
+            color: black;
+           }
+           #bg_color_text{
+            background-color: white;
+            color: black;
            }
 
            .bg_text{
@@ -31,7 +38,7 @@
             text-align: center;
             color: rgb(242, 177, 12);
            }
-           .bg{
+           #bg{
             background-image: url("pexels-hitesh-choudhary-909497.jpg");
             height: 100%;
             width: 100%;
@@ -114,17 +121,46 @@
         
 
         </style>
+        <script type="text/javascript">
+            function internalAlert(){
+                alert("Site under maintainence");
+            }
+            function internalConform(){
+                confirm("Your response would be submitted")
+            }
+            function internalPrompt(){
+                prompt("which bottle cap do you want to open")
+            }
+            function darkMode(){
+                document.getElementById("bg").style.backgroundImage="url(pexels-toni-cuenca-616834.jpg)";
+                
+                const collection = document.getElementsByTagName("div");
+                for (let i = 0; i < collection.length; i++) {
+                collection[i].style.backgroundColor = "black";
+                collection[i].style.color = "white";
+                }
+                const collection1 = document.getElementsByTagName("h1");
+                for (let i = 0; i < collection1.length; i++) {
+                collection1[i].style.color = "white";
+                }
+                const collection2 = document.getElementsByTagName("h3");
+                for (let i = 0; i < collection2.length; i++) {
+                collection2[i].style.color = "white";
+                }
+            }
+        </script>
     </head>
-    <body class="bg">
+    <body id="bg">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
-                    <img class="bg_img text-center" src="pexels-arpit-shah-995817.jpg" height="500px" width="99%" style="z-index: -1;">
+                    <img class="text-center" src="pexels-arpit-shah-995817.jpg" height="500px" width="99%" style="z-index: -1;" id="bg_img">
+                    <button class="bg_text text-center" style="float: right; background-color: transparent; border-color: rgb(242, 177, 12); margin-left: 5px;" onclick="darkMode()">Dark Mode</button>
                     <button class="bg_text text-center" style="float: right; background-color: transparent; border-color: rgb(242, 177, 12);"><a href="signup.html" style="color: rgb(242, 177, 12);">Signup</a></button>
-                    <button class="bg_text text-center" style="float: right; background-color: transparent; border-color: rgb(242, 177, 12); margin-right: 5px;">Login</button>
+                    <button class="bg_text text-center" style="float: right; background-color: transparent; border-color: rgb(242, 177, 12); margin-right: 5px;" onclick="internalAlert()">Login</button>
                     <h1 class="bg_text text-center" style="margin-top: 190px;"><b>Alcoholics</b></h1>
                     <h3 class="bg_text text-center" style="margin-top: 10px;">Where the actual world is seen!!</h3>
-                    <h2 class="bg_text text-center buttun1" style="margin-top: 20px; height: fit-content; width: fit-content;"><button style="background-color: transparent; border-color: rgb(242, 177, 12);"><a href="#" style="color: rgb(242, 177, 12);">Open the cap</a></button></h2>
+                    <h2 class="bg_text text-center buttun1" style="margin-top: 20px; height: fit-content; width: fit-content;"><button style="background-color: transparent; border-color: rgb(242, 177, 12);"><a href="#" style="color: rgb(242, 177, 12);" onclick="internalPrompt()">Open the cap</a></button></h2>
                 </div>
             </div>
         </div>
@@ -162,13 +198,13 @@
           <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="thumbnail shadow1" style="height: 100%; width: 100%;">
+                    <div class="thumbnail shadow1" style="height: 100%; width: 100%;" id="bg_color">
                         <a href="beer.html" target="_blank">
                             <div class="aligned">
                                 <img src="pexels-engin-akyurt-1672304.jpg" class="img1">
                                     
-                                <span><p><h1 style="margin-left: 40%;color: rgb(0, 0, 0);">Beer</h1></p>
-                                    <p><h2 style="color: black;"> Beer is an alcoholic beverage produced by extracting raw materials with water, boiling (usually with hops), and fermenting. In some countries, beer is defined by law—as in Germany, where the standard ingredients, besides water, are malt (kiln-dried germinated barley), hops, and yeast.</h2></p></span>
+                                <span><p><h1 style="margin-left: 40%;" id="bg_color_text">Beer</h1></p>
+                                    <p><h3 id="bg_color_text"> Beer is an alcoholic beverage produced by extracting raw materials with water, boiling (usually with hops), and fermenting. In some countries, beer is defined by law—as in Germany, where the standard ingredients, besides water, are malt (kiln-dried germinated barley), hops, and yeast.</h3></p></span>
                             </div>
                         </a>
                     </div>
@@ -194,7 +230,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="thumbnail shadow1" style="height: 100%;">
-                        <a href="silver_oak_small.webp" target="_blank">
+                        <a href="wine.html" target="_blank">
                             <div class="aligned">
                                 <img src="silver_oak_small.webp" class="img1"
                                     width="400" alt="" height="450px">
@@ -213,7 +249,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="thumbnail shadow1" style="height: 100%;">
-                        <a href="pexels-ibrahim-unal-3738485.jpg" target="_blank">
+                        <a href="Vodka.html" target="_blank">
                             <div class="aligned">
                                 <img src="pexels-ibrahim-unal-3738485.jpg" class="img1"
                                     width="400" alt="" height="450px">
@@ -226,7 +262,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="thumbnail shadow1" style="height: 100%;">
-                        <a href="pexels-sinitta-leunen-7618937.jpg" target="_blank">
+                        <a href="Rum.html" target="_blank">
                             <div class="aligned">
                                 <img src="pexels-sinitta-leunen-7618937.jpg" class="img1"
                                     width="400" alt="" height="450px">
@@ -267,9 +303,9 @@
             <div class="row">
                 <div class="col-md-12 text-center" style="color: white;">
                     <h4>
-                        <i class="fa fa-facebook"></i>&nbsp&nbsp&nbsp&nbsp;
-                        <i class="fa fa-linkedin"></i>&nbsp&nbsp&nbsp&nbsp;
-                        <i class="fa fa-twitter"></i>
+                        <a href="https://www.facebook.com" style="color: white;"><i class="fa fa-facebook"></i></a>&nbsp&nbsp&nbsp&nbsp;
+                        <a href="https://www.linkedin.com" style="color: white;"><i class="fa fa-linkedin"></i></a>&nbsp&nbsp&nbsp&nbsp;
+                        <a href="https://www.twitter.com" style="color: white;"><i class="fa fa-twitter"></i></a>
                     </h4>
                 </div>
                 <div class="col-md-12 text text-danger text-center"><h4><i class="fa fa-heart"></i> Thank You For visiting us</h4></div>
